@@ -1,6 +1,6 @@
 amazon-linux-extras install java-openjdk11 -y
-wget https://dlcdn.apache.org/tomcat/tomcat-9/v9.0.91/bin/apache-tomcat-9.0.91.tar.gz
-tar -zxvf apache-tomcat-9.0.91.tar.gz
+wget https://downloads.apache.org/tomcat/tomcat-11/v11.0.4/bin/apache-tomcat-11.0.4.tar.gz
+tar -zxvf apache-tomcat-11.0.4.tar.gz
 sed -i '56  a\<role rolename="manager-gui"/>' apache-tomcat-9.0.91/conf/tomcat-users.xml
 sed -i '57  a\<role rolename="manager-script"/>' apache-tomcat-9.0.91/conf/tomcat-users.xml
 sed -i '58  a\<user username="tomcat" password="raham123" roles="manager-gui, manager-script"/>' apache-tomcat-9.0.91/conf/tomcat-users.xml
